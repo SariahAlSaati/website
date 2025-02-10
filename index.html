@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>My Website</title>
+    <title>Home</title>
     <!-- Link to your CSS file -->
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -12,58 +12,60 @@
 
     <!-- Header -->
     <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Sariah Al Saati</h1>
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ind_research.html">Research</a></li>
+            <li><a href="ind_projects.html">Projects</a></li>
+            <li><a href="ind_experience.html">Experience</a></li>
+            <li><a href="Docs/cv.pdf">Resume</a></li>
+        </ul>
+    </nav>
+    
     <!-- Main Content Section -->
     <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>This is the home section of the website.</p>
+        <section id="Home">
+            <div class="project-container" style="margin-top: 20px;">
+                <div class="text-content">
+                    <h2>Hi there !</h2>
+                    <p>I am Sariah Al Saati, PhD student at Centre de Physique Théorique (CPHT) and planetology enthusiast, working on topological aspects of orbital magnetism in condensed matter physics. You can find in this website some of the projets I worked on in the past few years. Do contact me if you have any question ! </p>
+                </div>
+                <div class="image-content">
+                    <img src="Figures/topology.jpeg" alt="Project Image">
+                    <p class="caption"> Credit: Harald Ritsch/University of Innsbruck </p>
+                </div>
+            </div>
         </section>
-
-        <section id="about">
-            <h2>About</h2>
-            <p>This section contains information about the website or organization.</p>
-        </section>
-
-        <section id="services">
-            <h2>Services</h2>
-            <p>Here, you can describe the services you offer.</p>
-        </section>
-
         <section id="contact">
-            <h2>Contact Us</h2>
-            <form id="contactForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+            
+            <div class="project-container image-left" style="margin-top: 20px;">
+                <div class="image-content">
+                    <img src="Figures/Jupiter.jpg" alt="Project Image">
+                    <p class="caption"> Credit: NASA/JPL </p>
+            </div>
+            <div class="text-content">
+                <h2>Contact Me</h2>
+                <p>You can reach out to me via email or connect with me on various platforms:</p>
+                
+                <ul>
+                    <li>Email: <a href="mailto:sariah.al-saati@polytechnique.edu">sariah.al-saati(at)polytechnique.edu</a></li>
+                    <li>GitHub: <a href="https://github.com/SariahAlSaati" target="_blank">github.com/SariahAlSaati</a></li>
+                    <li>ResearchGate: <a href="https://www.researchgate.net/profile/Sariah-Al-Saati" target="_blank">researchgate.net/profile/Sariah-Al-Saati</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/sariah-al-saati-913407129/" target="_blank">linkedin.com/in/sariah-al-saati-913407129</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
+        <p>&copy; 2025 Sariah Al Saati. All rights reserved.</p>
     </footer>
-
-    <!-- Link to your JavaScript file -->
-    <script src="scripts.js"></script>
 
 </body>
 </html>
