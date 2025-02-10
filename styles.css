@@ -5,19 +5,43 @@
     box-sizing: border-box;
 }
 
-body {
+/* Header and Navigation */
+header {
+    background-image: url('Figures/wpp.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    display: flex;
+    padding: 90px;
+    justify-content: center; 
+    align-items: center;
+}
+
+html, body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
+    height: 100%;
+    margin: 0;
     background-color: #f4f4f4;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Header and Navigation */
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
+
+.header-container {
+    display: flex;
+    justify-content: center;
     text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100%; 
+}
+
+nav {
+    text-align: center;
+    background-color: #c9d9e9;
 }
 
 nav ul {
@@ -31,7 +55,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight: bold;
 }
@@ -45,10 +69,16 @@ main {
     padding: 20px;
     max-width: 1000px;
     margin: 20px auto;
+    flex: 1;
 }
 
 main h2 {
     margin-top: 20px;
+    color: #333;
+}
+
+main h3 {
+    margin-top: 10px;
     color: #333;
 }
 
@@ -90,8 +120,11 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 10px 0;
+    position: relative;
+    /* margin-top: 20px; */
+    bottom: 0;
+    width: 100%;
 }
 
 /* Responsive Design */
@@ -102,3 +135,82 @@ footer {
         margin: 10px 0;
     }
 }
+
+.project-container {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    text-align: justify;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 950px;
+    margin: auto;
+}
+.text-content {
+    flex: 1;
+    padding: 20px;
+}
+.text-content h2 {
+    margin-top: 0;
+}
+.image-content img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+img.block {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+img.block2 {
+    display: block;
+    margin-bottom: 30px;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+ul {
+    padding-left: 20px;
+}
+
+/* Image on the right (default) */
+.image-right .image-content {
+    order: 2;
+    padding-left: 20px;
+}
+.image-right .text-content {
+    order: 1;
+    padding-right: 20px;
+}
+
+/* Image on the left */
+.image-left .image-content {
+    order: 1;
+    padding-right: 20px;
+}
+.image-left .text-content {
+    order: 2;
+    padding-left: 20px;
+}
+
+.switch-btn {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #00aaff;
+    color: #f4f4f4;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 30%;
+}
+.switch-btn:hover {
+    background-color: #00aaff;
+}
+
+p.caption {
+    text-align: center;
+    font-size: 0.6em;
+  }
