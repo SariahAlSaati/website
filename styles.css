@@ -110,6 +110,15 @@ footer {
     }
 }
 
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li i, ul li img {
+    list-style: none;
+    margin-right: 8px;
+}
+
 .project-container {
     display: flex;
     align-items: center;
